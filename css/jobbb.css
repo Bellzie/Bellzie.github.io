@@ -76,11 +76,11 @@ header {
 
 /*Styling for footer og innholdet i footer*/
 .footer {
-    background-color: rgb(250, 197, 165);
+    background-color: rosybrown;
     color: rgb(50, 50, 84);
     text-align: center;
     padding: 20px;
-    grid-row: 3;
+    grid-row: 3;   /*plassering*/
     display: flex;
     align-items: center;
     margin-top: 200px;
