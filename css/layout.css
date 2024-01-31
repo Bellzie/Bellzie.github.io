@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: bisque;
+    width: 100vw;
+  }
+  
+
+/*Styling for nav baren*/
+  nav {
+    background-color: rgb(50, 50, 84);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    grid-row: 1;
+    position: fixed; /*Slik at den alltid vil ligge øverst på siden*/
+    width: 100%; 
+    top: 0;
+    z-index: 1000; /* For å være sikker på at den vises over andre elementer */
+}
+
+
+nav img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: rgb(250, 197, 165);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: rosybrown;
+}
+
+
+/*Overskriften*/
+  header {
+    background-color: rosybrown;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  /*Bildene*/
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-gallery img:hover{
+    transform: scale(1.5);
+    
+  }
+  
+  
+  /*Styling for footer*/
+
+  /*Styling for footer og innholdet i footer*/
+.footer {
+    background-color: rgb(50, 50, 84);
+    color: rgb(250, 197, 165);
+    text-align: center;
+    padding: 20px;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    height: 30vh;
+}
+
+
+.footer img {
+    height: 50px; 
+    margin-right: 50px; 
+}
+
+
+
+.contact-info {
+    flex-grow: 2; 
+    text-align: center;
+    align-items: center;
+    padding-left: 150px;
+    justify-content: center; 
+    
+}
+
+
+.logo{   /*Dette er for logene til sosale medier*/
+    height: 70px;
+    
+}
+
+/* Mobiltilpasning */
+@media (max-width: 767px) {
+    body {
+        margin-top: 80px; 
+        justify-content: center;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    header {
+        margin-top: 80px; 
+        
+    }
+
+    .image-gallery {
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+
+
+
+    .footer {
+        margin-top: 80px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        max-width: 91vw;
+    }
+
+    .social-media {
+        display: flex; 
+        justify-content: center; 
+        margin-top: 10px; 
+    }
+
+    .social-media img {
+        max-width: 30px; 
+        height: auto;
+        margin: 0 10px; 
+    }
+
+    .footer img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        padding: 0 20px;
+
+    }
+}
